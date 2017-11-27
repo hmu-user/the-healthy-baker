@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+
+    <title>The Healthy Baker</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
+        <div class="container">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+           <a class="navbar-brand" href="./index.html"><img src="img/logo.jpg" height="30" width="41" class="ml-1 mr-2"> The Healthy Baker</a>
+            <div id="Navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-2 mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./faq.html"><span class="fa fa-question-circle fa-lg"></span> FAQ</a></li>
+                </ul>
+                <ul class="navbar-nav">                    
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-sign-out fa-lg"></span> Logout</a></li>                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12">
+                    <h1>Feeling Hungry? Find A Recipe And Start Baking</h1>
+                    <p>We put the healthy back in delicious baked goods recipes.</p>
+                </div>
+                <div class="col-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="search" name="search" placeholder="search">
+                        <div class="input-group-addon"><span class="fa fa-search"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        
+        <div class="row row-breadcrumb">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item">Recipes</li>
+            </ol>
+        </div>
+        
+        <div class="row row-content align-items-center">                                        
+            <div class="col-12 col-lg-8">
+                <h2>Recipes</h2>
+                <ul class="list-unstyled recent-recipes-list ">
+
+                    <li id="recipe1" class="media recent-recipes-item">
+                        <a href="./recipe1.html">
+                            <img class="d-flex mt-1 mr-3 recent-recipes-item-img img-thumbnail" src="img/coconutbuns.jpg" alt="coconutbuns">
+                        </a>
+                        <div class="media-body">
+                            <h3 class="mt-0 mb-1">Coconut buns</h3>
+                            <p>Coconut buns - gluten free, dairy free, nut free.</p>
+                            <p class="hidden-xs-down">Eat the buns fresh out the oven with butter or use them as part of your lunch. They go great with soups and stews as well.</p>
+                        </div>
+                    </li>
+                    <li id="recipe2" class="media recent-recipes-item">
+                        <a href="./recipe2.html">
+                            <img class="d-flex mt-1 mr-3 recent-recipes-item-img img-thumbnail" src="img/muffins.jpg" alt="muffins">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="mt-0 mb-1">Blackberry muffins</h4>
+                            <p>Blackberry muffins - gluten free, lactose free, nut free.</p>
+                            <p class="hidden-xs-down">Delicious muffins that will only take you a few minutes to make.</p>
+                        </div>
+                    </li>
+                    <li id="recipe3" class="media recent-recipes-item">
+                        <a href="./recipe3.html">
+                            <img class="d-flex mt-1 mr-3 recent-recipes-item-img img-thumbnail" src="img/brownie.jpg" alt="brownie">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="mt-0 mb-1">Brownie with walnuts</h4>
+                            <p>Brownie with walnuts and 'milk' chocolate - gluten free.</p>
+                            <p class="hidden-xs-down">Dark,rich and oh so good - this brownie is pure chocolate heaven!</p>
+                        </div>
+                    </li>
+                     <li id="recipe4" class="media recent-recipes-item">
+                        <a href="./recipe4.html">
+                            <img class="d-flex mt-1 mr-3 recent-recipes-item-img img-thumbnail" src="img/bananacake.jpg" alt="brownie">
+                        </a>
+                        <div class="media-body">
+                            <h4 class="mt-0 mb-1">Flourless banana cake</h4>
+                            <p>Flourless banana cake - gluten free, lactose free.</p>
+                            <p class="hidden-xs-down">If you love a good banana cake this will surely hit the spot with plenty of that sweet banana flavour.</p>
+                        </div>
+                    </li>
+                 
+                                    
+                </ul>                
+            </div>
+            <!-- hide for small screens -->
+            <div class="col-4 align-self-start sticky-top hidden-md-down">
+                <div class="recipe-image-container">
+                <img id="recipeImage" class="recipe-image img-thumbnail" src="img/alberto.png" alt="recipe-image" data-spy="affix" data-offset-top="5">
+               </div>
+            </div>
+        </div>        
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4">
+                    <h4>The Healthy Baker</h4>
+                    <p><small>The Healthy Baker is a recipe site with healthy baked goods. The site consist of easy to follow recipes using simple and nutritious ingredients.  All the recipes are without gluten and some without lactose and nuts as well. The Healthy Baker helps you understand what health properties the food you eat have, which makes it easier for you to make healthier choices in your diet.</small></p>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <h4>Mission</h4>
+                    <p><small>Our mission is to make it easy and delicious for you to eat healthy.!
+           Finding out what's healthy and what's not can be quite tricky, so we decided to create this recipe app for you. 
+           Here you'll find health tweaked recipes of your favourite sweets and treats, while learning how natural and wholesome ingredients are good for you. We believe that knowledge is the best motivation for a healthy lifestyle.</small></p>
+                </div>                                
+                <div class="col-12 col-sm-4">
+                <h4>Contact Info</h4>
+                  <address><small>
+                       156, Square Martin<rb>
+                       Hudson, BundStadt<br> 
+                       Germany<br>
+                      <span class="fa fa-phone fa-lg"></span>: +123 4567 8909<br>
+                      <span class="fa fa-fax fa-lg"></span>: +123 4567 8349<br>
+                      <span class="fa fa-envelope fa-lg"></span>: <a href="mailto:thehealthybaker@food.net">thehealthybaker@food.net</a>
+                      </small>
+                  </address>
+                </div>
+            </div>
+            <div class="row row-footer justify-content-center">
+                <div class="col-12 col-sm-4 offset-sm-4 mr-sm-auto text-center my-2">
+                    <p>@Copyright 2017 The Healthy Baker</p>
+                </div>
+                <div class="col-auto">                
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="./index.html"> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about.html"> About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./faq.html"> FAQ</a></li>
+                    </ul>                
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JQuery first, then Tether, then Bootstrap JS -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css --> 
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+
+    <title>The Healthy Baker</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
+        <div class="container">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html"><img src="img/logo.jpg" height="30" width="41" class="ml-1 mr-2"> The Healthy Baker</a>
+            <div id="Navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-2 mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-question-circle fa-lg"></span> FAQ</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <!-- set both to toggle modals -->
+                    <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#loginModal"><span class="fa fa-sign-in fa-lg"></span> Login</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#registerModal"><span class="fa fa-user-plus fa-lg"></span> Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 </div>
+                 <div class="modal-body">
+                     <form>                       
+                         <div class="form-group">
+                             <label for="userName" class="col-form-label">User Name</label>                             
+                                 <input type="text" class="form-control" id="userName" name="userName" placeholder="User Name">                             
+                         </div>
+                         <div class="form-group">
+                             <label for="password" class="col-form-label">Password</label>                             
+                                 <input type="text" class="form-control" id="password" name="password" placeholder="Password">                            
+                         </div>
+                         <div class="form-group">
+                             <button id="loginButton" type="button" class="btn btn-primary btn-block">Login</button>
+                             <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Cancel</button>                             
+                         </div>
+                     </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Register</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 </div>
+                 <div class="modal-body">
+                     <form>
+                         <div class="form-group">
+                             <label for="firstName" class="col-form-label">First name</label>                             
+                             <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">                             
+                         </div>
+                         <div class="form-group">
+                             <label for="lastName" class="col-form-label">Last name</label>                             
+                                 <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">                             
+                         </div>
+                         <div class="form-group">
+                             <label for="userName" class="col-form-label">User Name</label>                             
+                                 <input type="text" class="form-control" id="userName" name="userName" placeholder="User Name">                             
+                         </div>
+                         <div class="form-group">
+                             <label for="password" class="col-form-label">Password</label>                             
+                                 <input type="text" class="form-control" id="password" name="password" placeholder="Password">                            
+                         </div>
+                         <div class="form-group">
+                             <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                             <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Cancel</button>                             
+                         </div>
+                     </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12">
+                    <h1>Feeling Hungry? Find A Recipe And Start Baking</h1>
+                    <p>We put the healthy back in delicious baked goods recipes.</p>
+                </div>
+                <div class="col-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="search" name="search" placeholder="search">
+                        <div class="input-group-addon"><span class="fa fa-search"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        
+        <div class="row row-breadcrumb">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item">FAQ</li>                
+            </ol>
+        </div>
+        
+        <div class="row row-content align-items-center">                                    
+            <div class="col-12">
+               <h2>FAQ</h2>
+
+               <div id="accordion" role="tablist">                    
+                    <div class="card">
+                        <div class="card-header" role="tab" id="faqHeader1">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#faq1">
+                                   Pricing
+                                </a>
+                            </h5>
+                        </div>
+                        <div role="tabpanel" class="collapse show" id="faq1">
+                            <div class="card-block">
+                                <p>It is completly free to sign up for an account. When you sign up you will have access to all recipes that are posted on the healthy baker.</p>  
+                                <p>The healthy baker has no plans for a paid access plan in the near future. If in the future a paid plan is presented there will always be a free plan available.
+                               </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="faqHeader2">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#faq2">
+                                   Content
+                                </a>
+                            </h5>
+                        </div>
+                        <div role="tabpanel" class="collapse" id="faq2">
+                            <div class="card-block">
+                                <p>All recipes have been developed from scratch and tried out on a focus group before published.</p>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="faqHeader3">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#faq3">
+                                    Feedback
+                                </a>
+                            </h5>
+                        </div>
+                        <div role="tabpanel" class="collapse" id="faq3">
+                            <div class="card-block">
+                                <p>We can only become better when we get feedback. If you have any feedback don't be shy to write us a line. You can find the contact information at the bottom of the page.</p>
+                                <p>Thanks in advance :D</p>
+                            </div>
+                        </div>
+                    </div>    
+
+               </div>            
+
+            </div>
+        </div>
+
+      
+
+      
+      
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+           <div class="row">
+                <div class="col-12 col-sm-4">
+                    <h4>The Healthy Baker</h4>
+                    <p><small>The Healthy Baker is a recipe app with healthy baked goods. The site consist of easy to follow recipes using simple and nutritious ingredients.  All the recipes are without gluten and some without lactose and nuts as well. The Healthy Baker helps you understand what health properties the food you eat have, which makes it easier for you to make healthier choices in your diet.</small></p>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <h4>Mission</h4>
+                    <p><small>Our mission is to make it easy and delicious for you to eat healthy.!
+           Finding out what's healthy and what's not can be quite tricky, so we decided to create this recipe app for you. 
+           Here you'll find health tweaked recipes of your favourite sweets and treats, while learning how natural and wholesome ingredients are good for you. We believe that knowledge is the best motivation for a healthy lifestyle.</small></p>
+                </div>                                
+                <div class="col-12 col-sm-4">
+                <h4>Contact Info</h4>
+                  <address><small>
+                       156, Square Martin<rb>
+                       Hudson, BundStadt<br> 
+                       Germany<br>
+                      <span class="fa fa-phone fa-lg"></span>: +123 4567 8909<br>
+                      <span class="fa fa-fax fa-lg"></span>: +123 4567 8349<br>
+                      <span class="fa fa-envelope fa-lg"></span>: <a href="mailto:thehealthybaker@food.net">thehealthybaker@food.net</a>
+                      </small>
+                  </address>
+                </div>
+            </div>
+            <div class="row row-footer justify-content-center">
+                <div class="col-12 col-sm-4 offset-sm-4 mr-sm-auto text-center my-2">
+                    <p>@Copyright 2017 The Healthy Baker</p>
+                </div>
+                <div class="col-auto">                
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="./index.html"> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about.html"> About</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#"> FAQ</a></li>
+                    </ul>                
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JQuery first, then Tether, then Bootstrap JS -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

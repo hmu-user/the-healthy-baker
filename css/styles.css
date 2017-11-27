@@ -1,0 +1,157 @@
+.row-header {
+	margin: 0px auto;
+	padding: 0px auto;
+}
+
+.row-breadcrumb {
+	margin: 0px auto;	
+}
+
+.row-content {
+	margin: 0px auto;
+	padding: 50px 0px 50px 0px;
+	border-bottom: 1px ridge;
+	min-height: 300px;
+}
+
+.row-content-small {
+	margin: 0px auto;
+	padding: 20px 0px 20px 0px;
+	border-bottom: 1px ridge;
+	min-height: 100px;	
+}
+
+.footer {
+	background-color: #607D8B;
+	margin:0px auto;
+	padding: 20px 0px 20px 0px;
+	color: floralwhite;
+}
+
+.row-footer {
+	margin: 0px auto;
+	padding: 20px 0px 0px 0px;		
+}
+
+.jumbotron {
+	padding: 70px 30px 70px 30px;
+	margin: 0px auto;
+	background: #455A64;
+	color: floralwhite;
+}
+
+address: {
+	font-size: 80%;
+	margin: 0px;
+	color: #0f0f0f;
+}
+
+body {
+	padding: 50px 0px 0px 0px;
+	z-index: 0;	
+}
+
+.navbar-inverse {
+	background-color: #37474F;
+}
+
+.carousel {
+	background: #607D8B;
+
+}
+
+.carousel-item {
+	height: 300px;
+
+}
+
+.carousel-item .carousel-caption{
+	color: floralwhite;
+	background-color: rgba(55,71,79,0.15);
+}
+
+
+.carousel-item img {
+	position:absolute;
+	top: 0;
+	left:0;
+	min-height: 300px;
+	min-width: 50%;
+}
+
+.recent-recipes-list {
+	background-color: #eee;
+	padding: 2px;	
+}
+
+.recent-recipes-item {
+	border: 1px #eee ridge;
+	padding: 10px;
+	margin: 1px 0px;
+	background-color: #ffffff;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10), 0 2px 4px 0 rgba(0, 0, 0, 0.10); 
+}
+
+.recent-recipes-item-img {
+	height: 150px;
+	width: 150px;
+}
+
+.recent-recipes-item:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+	border-color: #607D8B; 
+}
+
+.recipe-main-image {
+	/*max-width: 100%;*/
+	/*height: auto;*/
+	width: 600;
+	height: 400;
+}
+
+
+.team-image {
+	/*max-width: 100%;*/
+	/*height: auto;*/
+	width: 200;
+	height: 200;
+}
+
+.recipe-image-container
+{
+    margin: 60px 0px 0px 0px;
+   
+}
+
+.recipe-image {
+	 width:100%;
+}
+
+.breadcrumb {
+	background-color: #ffffff;
+	border-bottom: 1px #ccc ridge;
+	border-radius: 0px;	
+
+}
+
+.ingredients, .steps {
+	padding-left: 20px;
+}
+
+/*
+ To counter the modal adding right margin to body to when opened 
+ https://stackoverflow.com/questions/19288546/how-can-i-prevent-body-scrollbar-and-shifting-when-twitter-bootstrap-modal-dialo
+*/
+.modal {
+	overflow-y: auto !important;
+}
+
+.modal-open {
+	overflow: auto !important;
+	overflow-x: hidden !important;
+	padding-right: 0 !important;
+}
+
+a {
+	color: #691A99;
+}
