@@ -9,7 +9,9 @@ The application is deployed to the Heroku platform and can be accessed at the fo
 https://thehealthybaker.herokuapp.com
 
 Login credentials are:
+
 user: user
+
 pass: 1234
 
-Please note that the application is deployed on the free Heroku tier and that Heroky will idle the dyno when it has not been used for some time. It may require a page refresh of the browser and a little patience for the page to load the first time.
+# Please note that the application is deployed on the free Heroku tier and that Heroky will idle the dyno when it has not been used for some time. It may require a page refresh of the browser and a little patience for the page to load the first time.
